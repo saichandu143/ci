@@ -16,11 +16,11 @@
   
   
  <distributionManagement>
- <!-- <repository>
+  <repository>
      <id>deployment</id>
      <name>Internal Releases</name>
      <url>http://192.168.1.11:8080/nexus/content/repositories/releases/</url>
-  </repository>-->
+  </repository>
    
   <snapshotRepository>
      <id>deployment</id>
