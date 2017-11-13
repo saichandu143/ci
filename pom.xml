@@ -4,7 +4,7 @@
 
   <groupId>ramana</groupId>
   <artifactId>seshu</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>seshu</name>
@@ -13,7 +13,23 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
+  
+ <distributionManagement>
+ <!-- <repository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://192.168.1.11:8080/nexus/content/repositories/releases/</url>
+  </repository>-->
+   
+  <snapshotRepository>
+     <id>deployment</id>
+     <name>Internal Releases</name>
+     <url>http://192.168.174.134:8080/nexus-2.11.4-01/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
